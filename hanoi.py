@@ -32,8 +32,8 @@ class Hanoi(object):
 		self.print_status()
 
 		self._solve(self._n, source_rod=self._left, 
-			                 helper_rod=self._middle, 
-			                 target_rod=self._right)
+			             helper_rod=self._middle, 
+			             target_rod=self._right)
 
 		expected_moves = 2**(self._n) - 1
 
@@ -61,8 +61,8 @@ class Hanoi(object):
 			# Move n-1 disks from the left rod to the middle rod using the
 			# right rod as swap
 			self._solve(n - 1, source_rod=source_rod, 
-				               helper_rod=target_rod,
-				               target_rod=helper_rod)
+				           helper_rod=target_rod,
+				           target_rod=helper_rod)
 
 			# Move one disk to target
 			item = source_rod.pop()
@@ -73,8 +73,8 @@ class Hanoi(object):
 
 			# Move all other disks from middle rod to right rod
 			self._solve(n - 1, source_rod=helper_rod, 
-				               helper_rod=source_rod, 
-				               target_rod=target_rod)
+				           helper_rod=source_rod, 
+				           target_rod=target_rod)
 
 	# The next methods are just to print as we go
 
