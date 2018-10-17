@@ -6,5 +6,12 @@ An implementation of the Hanoi towers problem
 Solve the problem with 5 blocks:
 
 ```
-> python hanoi.py 5
+> ./hanoi.py 5
 ```
+
+Run with `-h` to see the usage information:
+
+```
+> ./hanoi.py -h
+```
+
